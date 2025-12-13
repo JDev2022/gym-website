@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
+    list-style: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -53,16 +57,31 @@ ul a {
 a:hover {
     cursor: pointer;
     text-decoration: underline;
+    
 }
 
 #hero {
     background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/hero-background-image.jpg);
+    url(../images/hero-background-image.avif);
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 70vh;
+    z-index: -1;
+}
+
+.image-overlay {
+
+}
+
+h1 {
+    color: rgb(228, 197, 21);
+    font-family: Anton, Montserrat, League Spartan;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 10%;
+    padding-left: 10%;
 }
 
 
