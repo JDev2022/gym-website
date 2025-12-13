@@ -69,6 +69,7 @@ a:hover {
     width: 100%;
     height: 70vh;
     z-index: -1;
+    position: absolute;
 }
 
 .image-overlay {
