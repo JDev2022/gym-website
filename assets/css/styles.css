@@ -110,7 +110,6 @@ h1 {
     0 0 20px #00f5ff;
     cursor: pointer;
     text-decoration: underline;
-
 }
 footer {
     background: inherit;
@@ -121,17 +120,13 @@ footer {
     padding-left: 3rem;
     font-size: 0.8rem;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
-
 .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-
 footer ul li a {
     color: #00f5ff;
     font-size: 1.5rem;
