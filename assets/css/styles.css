@@ -90,6 +90,16 @@ h1 {
     margin-top: 6%;
     margin-left: 15%;
 }
+.pageHero-subHeading {
+    color: rgb(228, 197, 21);
+    font-family: "Equinox" Sans Arial, system-ui, Montserrat;
+    font-style: normal;
+    font-size: 1.5rem;
+
+    /* padding-left: 10%; */
+    margin-bottom: 3rem;
+    margin-left: 15%;    
+}
 .btn {
     background: #1f1a1a;
     color: rgb(228, 197, 21);
