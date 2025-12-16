@@ -20,23 +20,6 @@
     z-index: -1;
     position: absolute;
 }
-.navbar {
-    font-family: Arial, sans-serif;
-    color: rgb(228, 197, 21);
-    font-size: 1.3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    height: 75px;
-    width: 100%;
-    background: #1f1a1a;
-    position: fixed; 
-}
-.navdiv {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
 .logo {
     color: rgb(228, 197, 21);
     font-size: 2rem;
@@ -51,6 +34,24 @@
     0 0 10px #00f5ff,
     0 0 20px #00f5ff;
 }
+.navbar {
+    font-family: Arial, sans-serif;
+    color: rgb(228, 197, 21);
+    font-size: 1.3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    height: 75px;
+    width: 100%;
+    background: #1f1a1a;
+
+}
+.navdiv {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
 .nav-list {
     color: rgb(228, 197, 21);
     display: flex;
@@ -76,29 +77,30 @@
 a:hover {
     cursor: pointer;
     text-decoration: underline;
-    
 }
+
 h1 {
     color: rgb(228, 197, 21);
     font-family: "Sekuya", system-ui, Montserrat;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    padding-top: 15%;
-    /* padding-left: 10%; */
+    padding-top: 5%;
     margin-bottom: 2rem;
     margin-top: 6%;
     margin-left: 15%;
+    margin-right: 130px;
 }
 .pageHero-subHeading {
     color: rgb(228, 197, 21);
-    font-family: "Equinox" Sans Arial, system-ui, Montserrat;
+    font-family: Arial, system-ui, Montserrat;
     font-style: normal;
     font-size: 1.5rem;
 
     /* padding-left: 10%; */
     margin-bottom: 3rem;
-    margin-left: 15%;    
+    margin-left: 15%;
+    margin-right: 130px;    
 }
 .btn {
     background: #1f1a1a;
@@ -153,4 +155,6 @@ footer ul li a:hover {
 .rights {
     color: #fff;
 }
-
+/* mobile view */
+@media all and (max-width: 768px){
+}
