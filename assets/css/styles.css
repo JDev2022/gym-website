@@ -9,6 +9,12 @@
     scroll-behavior: smooth;
     list-style-type: none;
 }
+:root{
+    --dark-background-color:  #1f1a1a;
+    --text-shadow: #00f5ff;
+    --text-color: rgb(228, 197, 21)
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,14 +30,14 @@ body {
     position: absolute;
 }
 .logo {
-    color: rgb(228, 197, 21);
+    color: var(--text-color);
     font-size: 2rem;
 }
 .logo-span {
-    color: #00f5ff;
+    color: var(--text-shadow);
 }
 .logo:hover {
-      color: #00f5ff;
+      color: var(--text-shadow);
   text-shadow:
     0 0 5px #00f5ff,
     0 0 10px #00f5ff,
@@ -46,28 +52,7 @@ body {
 .navdiv:first-child {
     margin-right: auto;
 }
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 120px;
-    z-index: 999;
-    background: #1f1a1a;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0. 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: center;
-}
-.sidebar li{
-    width: 100%;
-}
-.sidebar a{
-    width: 100%;
-}
+
 .navbar {
     font-family: Arial, sans-serif;
     color: rgb(228, 197, 21);
@@ -96,11 +81,11 @@ body {
   align-items: center;
 }
 .nav-list a:hover {
-  color: #00f5ff;
+  color: var(--text-shadow);
   text-shadow:
-    0 0 5px #00f5ff,
-    0 0 10px #00f5ff,
-    0 0 20px #00f5ff;
+    0 0 5px var(--text-shadow),
+    0 0 10px var(--text-shadow),
+    0 0 20px var(--text-shadow);
 }
 a:hover {
     cursor: pointer;
@@ -108,7 +93,7 @@ a:hover {
 }
 
 h1 {
-    color: rgb(228, 197, 21);
+    color: var(--text-color);
     font-family: "Sekuya", system-ui, Montserrat;
     font-weight: 400;
     font-style: normal;
@@ -120,7 +105,7 @@ h1 {
     margin-right: 130px;
 }
 .pageHero-subHeading {
-    color: rgb(228, 197, 21);
+    color: var(--text-color);
     font-family: Arial, system-ui, Montserrat;
     font-style: normal;
     font-size: 1.5rem;
@@ -132,7 +117,7 @@ h1 {
 }
 .btn {
     background: #1f1a1a;
-    color: rgb(228, 197, 21);
+    color: var(--text-color);
     margin-left: 15%;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -143,11 +128,11 @@ h1 {
     padding: 0.7rem 0.8rem;
 }
 .btn:hover {
-    color: #00f5ff;
+    color: var(--text-shadow);
     text-shadow:
-    0 0 5px #00f5ff,
-    0 0 10px #00f5ff,
-    0 0 20px #00f5ff;
+    0 0 5px var(--text-shadow),
+    0 0 10px var(--text-shadow),
+    0 0 20px var(--text-shadow);
     cursor: pointer;
     text-decoration: underline;
 }
@@ -168,15 +153,15 @@ footer {
     gap: 2rem;
 }
 footer ul li a {
-    color: #00f5ff;
+    color: var(--text-shadow);
     font-size: 1.5rem;
 }
 
 footer ul li a:hover {
     text-shadow: 
-    0 0 5px rgb(228, 197, 21),
-    0 0 10px rgb(228, 197, 21),
-    0 0 20px rgb(228, 197, 21);
+    0 0 5px var(--text-color),
+    0 0 10px var(--text-color),
+    0 0 20px var(--text-color);
     transition: color 0.3s ease, text-shadow 0.4s ease;
 }
 
