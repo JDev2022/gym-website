@@ -25,7 +25,15 @@
           
           <div class="nav">
 
-            <ul class="nav-list off-screen-menu">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallary</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <ul class="off-screen-menu active">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Gallary</a></li>
@@ -34,9 +42,9 @@
             </ul>
 
               <div class="ham-menu">
+                <span class="glow"></span>
                 <span></span>
-                <span></span>
-                <span></span>
+                <span class="glow"></span>
             </div>
           </div>
         </div>
@@ -48,8 +56,10 @@
         <p class="pageHero-subHeading">Sign up before January 1st and get exclusive member savings + free fitness assessment</p>
         <button class="btn">Join In</button>
       </section>
+
+
     </section>
-    <footer>
+              <footer>
         <div class="footer-bottoms">
         <ul class="social-icons">
           <li>
@@ -66,5 +76,16 @@
     <p class="rights">© 2025 Kinetic zone. All Rights Reserved.</p>
   </div>
     </footer>
+  <script>
+    const hamMenu = document.querySelector('.ham-menu');
+
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+
+    hamMenu.addEventListener('click', () => {
+      hamMenu.classList.toggle('active');
+      offScreenMenu.classList.toggle('active');
+    })
+  </script>
   </body>
+
 </html>
