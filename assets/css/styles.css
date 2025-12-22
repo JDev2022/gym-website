@@ -17,9 +17,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-#hero {
-    background:
+        background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/hero-background-image.avif);
     background-position: center;
@@ -27,8 +25,13 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    z-index: -1;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    
+}
+#hero {
+    flex: 1;
 }
 .logo {
     color: var(--text-color);
@@ -234,14 +237,14 @@ h1 {
     text-decoration: underline;
 }
 footer {
-    background: inherit;
-    position: fixed;
+    background: transparent;
     width: 100vw;
-    bottom: 0;
     padding-bottom: 1rem;
     padding-left: 3rem;
     font-size: 0.8rem;
     font-family: Helvetica, Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
 }
 .social-icons {
     display: flex;
@@ -290,5 +293,7 @@ footer ul li a:hover {
 .heading-one {
     font-size: 2rem;
 }
+
+
 
 }
