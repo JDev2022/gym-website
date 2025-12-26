@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
     list-style-type: none;
 }
+
 :root{
     --dark-background-color:  #1f1a1a;
     --text-shadow: #00f5ff;
@@ -57,6 +58,7 @@ body {
     padding: 1rem;
     position: relative;
 }
+
 .navdiv:first-child {
     margin-right: auto;
 }
@@ -97,6 +99,7 @@ body {
     0 0 10px var(--text-shadow),
     0 0 20px var(--text-shadow);
 }
+
 a:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -172,6 +175,7 @@ a:hover {
     display: none; 
     transform-origin: center;
 }
+
 .ham-menu:hover span {
     cursor: pointer;
     color: var(--text-shadow);
@@ -184,10 +188,10 @@ a:hover {
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
+
 .ham-menu span:nth-child(3) {
     top: 75%;
 }
-
 
 .ham-menu.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -216,7 +220,6 @@ ul .active span:nth-child(3){
     transform: translateY(-50%) rotate(-45deg);
 }
 
-
 h1 {
     color: var(--text-color);
     font-family: "Sekuya", system-ui, Montserrat;
@@ -229,17 +232,17 @@ h1 {
     margin-left: 15%;
     margin-right: 130px;
 }
+
 .pageHero-subHeading {
     color: var(--text-color);
     font-family: Arial, system-ui, Montserrat;
     font-style: normal;
     font-size: 1.5rem;
-
-    /* padding-left: 10%; */
     margin-bottom: 3rem;
     margin-left: 15%;
     margin-right: 130px;    
 }
+
 .btn {
     background: #1f1a1a;
     color: var(--text-color);
@@ -252,6 +255,7 @@ h1 {
     line-height: 1;
     padding: 0.7rem 0.8rem;
 }
+
 .btn:hover {
     color: var(--text-shadow);
     text-shadow:
@@ -261,6 +265,7 @@ h1 {
     cursor: pointer;
     text-decoration: underline;
 }
+
 footer {
     background: transparent;
     width: 100vw;
@@ -271,12 +276,14 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
+
 footer ul li a {
     color: var(--text-shadow);
     font-size: 1.5rem;
@@ -293,6 +300,7 @@ footer ul li a:hover {
 .rights {
     color: #fff;
 }
+
 /* mobile view */
 @media all and (max-width: 768px){
     .off-screen-menu.active {
