@@ -15,7 +15,7 @@
     --dark-background-color:  #1f1a1a;
     --text-shadow: #00f5ff;
     --text-color: rgb(228, 197, 21);
-
+    --animationtiming: 200ms ease-in-out;
 }
 
 body {
@@ -143,17 +143,24 @@ a:hover {
 }
 
 .ham-menu {
-    height: 50px;
+
+    /* height: 50px;
     width: 50px;
     /* margin-left: auto;  As the position is fixed we should not use the margin left: auto. instead, we can just anchor it directly to the left right side */
-    position: absolute;
-    top: 1vh;
-    right: 1.2rem;
-    z-index: 999;
+    /* position: absolute; */
+    /* top: 1vh; */
+    /* right: 1.2rem; */
+    /* z-index: 999; */
+    
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+
 }
 
 .ham-menu span {
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: var(--text-color);
     position: absolute;
@@ -161,9 +168,10 @@ a:hover {
     top: 50%;
     left: 50%;
     border-bottom: 1rem ;
-    transform: translate(-50%, -50%);
-    transition: 0.3s ease;
-    display: none;
+    /* transform: translate(-50%, -50%); */
+    transition: transform 0.3s ease-in-out;
+    /* display: none;  i comment this out while trying to find out to fix the hamburger menu*/
+    transform-origin: center;
 }
 .ham-menu:hover span {
     cursor: pointer;
@@ -181,23 +189,34 @@ a:hover {
     top: 75%;
 }
 
+
 .ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50) rotate(45deg);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.ham-menu.active span:nth-child(2){
-    opacity: 0;
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
 }
 
 .ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50, -50) rotate(-45deg);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* .off-screen-menu.active {
-    opacity: 1;
-} */
+ul .active span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+ul .active span:nth-child(2){
+    opacity: 0;
+}
+
+ul .active span:nth-child(3){
+    bottom:auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
 
 h1 {
     color: var(--text-color);
@@ -292,10 +311,10 @@ footer ul li a:hover {
 .nav-list {
     display: none;
 }  
-
+/* 
 .ham-menu span {
     display: flex;
-}
+} */
 
 .heading-one {
     font-size: 2rem;
