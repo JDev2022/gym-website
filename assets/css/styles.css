@@ -168,9 +168,8 @@ a:hover {
     top: 50%;
     left: 50%;
     border-bottom: 1rem ;
-    /* transform: translate(-50%, -50%); */
     transition: transform 0.3s ease-in-out;
-    /* display: none;  i comment this out while trying to find out to fix the hamburger menu*/
+    display: none; 
     transform-origin: center;
 }
 .ham-menu:hover span {
@@ -311,10 +310,10 @@ footer ul li a:hover {
 .nav-list {
     display: none;
 }  
-/* 
+
 .ham-menu span {
     display: flex;
-} */
+}
 
 .heading-one {
     font-size: 2rem;
