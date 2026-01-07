@@ -303,6 +303,24 @@ footer ul li a:hover {
     color: #fff;
 }
 
+.about-page {
+    background-image: url(../images/hero-background-image.jpg);
+  
+    color: var(--text-color);
+}
+
+.about {
+    margin-top: 3rem;
+    margin-left: 15%;
+}
+
+.heading-h2 {
+    font-family: "Sekuya", system-ui, Montserrat;
+    line-height: 1.2;
+    font-size: larger;
+}
+
+
 /* mobile view */
 @media all and (max-width: 768px){
     .off-screen-menu.active {
