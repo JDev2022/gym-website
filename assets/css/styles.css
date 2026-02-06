@@ -37,13 +37,21 @@ body {
     overflow-x: hidden; /* hides horizontal scrollbar */
 }
 
+/* header { */
+    /* position: relative; /* was fixed, now relative for the menu */
+    /* width: 100%;
+    z-index: 1000; keep header above other content */ */
+    
 header {
-    position: relative; /* was fixed, now relative for the menu */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* keep header above other content */
+    z-index: 1000;
 }
 
-#hero {
+
+main, #hero {
     flex: 1;
 }
 .logo {
@@ -116,13 +124,7 @@ a:hover {
     text-decoration: underline;
 }
 
-header {
-    position: fixed;  /* keeps it fixed at the top */
-    top: 0;           /* stick to the top of the viewport */
-    left: 0;          /* align left edge */
-    width: 100%;      /* span full width */
-    z-index: 1000;    /* stay above other content */
-}
+
 
  .off-screen-menu{
     background: var(--dark-background-color);
@@ -298,10 +300,10 @@ footer {
     padding-left: 3rem;
     font-size: 0.8rem;
     font-family: Helvetica, Arial, sans-serif;
-    position: static;
     margin-top: 30px;
     bottom: 0;
     padding-bottom: 1rem;
+    position: fixed;
 
 }
 
@@ -329,7 +331,8 @@ footer ul li a:hover {
     color: #fff;
     position: fixed;
     bottom: 0;
-}
+} 
+
 
 .about-page {
     background-image: url(../images/hero-background-image.jpg);
@@ -347,25 +350,82 @@ footer ul li a:hover {
     line-height: 1.2;
     font-size: larger;
 }
-
+/* 
 main, #hero, .hero-content {
     margin-top: 75px; /* adjust to header height */
+ */
+
+/* Gallery page */
+
+html, body.gallery-page {
+    background: white;
 }
 
-#gallery {
-    
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
 }
+
+#photos {
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0;
+    padding: 0;
+}
+
+#photos img {
+  width: 100%;          /* images fill column width */
+  display: block;       /* removes inline spacing */
+  break-inside: avoid;  /* prevents images from splitting between columns */
+  margin-bottom: 0;     /* no extra gaps */
+}
+
+/* About page */
+/* Dark About Page */
+body.about-page {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/hero-background-image.avif') center/cover no-repeat;
+  color: var(--text-color);
+  padding-top: 100px; /* space for fixed header */
+}
+
+main.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.7;
+  padding-right: 5rem;
+}
+
+.about-content h2 {
+  margin-top: 2rem;
+  color: var(--text-shadow);
+}
+
+.about-content ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+header, .navbar {
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 100%;      
+    z-index: 1000;     
+}
+
 
 
 /* mobile view */
-@media all and (max-width: 992px){
-    .off-screen-menu.active {
+@media screen and (max-width: 992px){
+.off-screen-menu.active {
     top: 11%;
-    right:0;
+    right: 0;
     display: flex;
     opacity: 0.5;
+    }
 
-}
 
 .navbar {
     padding-left: 3rem;
@@ -381,8 +441,54 @@ main, #hero, .hero-content {
 
 .heading-one {
     font-size: 2rem;
+} 
+}
+
+@media screen and (min-width: 320ppx) {
+  #photos {
+    column-count: 1;
+  }
+}
+
+/* Small devices (≥ 576px) */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+  }
+}
+.about h1 {
+  font-size: 1.2rem; 
+  font-weight: 400;
+}
+    .about h2 {
+    font-size: 1rem;
+}
+
+/* Medium devices (≥ 768px) */
+@media screen and (min-width: 768px) {
+  #photos {
+    column-count: 3;
+  }
+
+    .about h1 {
+    font-size: 2rem;
+  }
+
+    .about h2 {
+    font-weight: 300;
+}
 }
 
 
+/* Large devices (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+  #photos {
+    column-count: 4;
+  }
+
+    .about h1 {
+    font-size: 3rem; /* desktop size */
+  }
 
 }
+    
