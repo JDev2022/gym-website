@@ -270,6 +270,27 @@ h1 {
     margin-right: 130px;    
 }
 
+/* Make hero section a flex container */
+#hero, .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: flex-start; /* horizontal alignment, adjust as needed */
+    min-height: 80vh; /* take at least 80% of viewport height */
+    padding-left: 15%; /* keep your original spacing */
+    padding-right: 15%;
+}
+
+/* Adjust heading and subheading if needed */
+.heading-one {
+    font-size: clamp(2rem, 5vw, 4rem); /* responsive font size */
+}
+
+.pageHero-subHeading {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+
 .btn {
     background: #1f1a1a;
     color: var(--text-color);
