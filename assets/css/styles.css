@@ -227,21 +227,6 @@ a:hover {
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* ul .active span:nth-child(1){
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-}
-
-ul .active span:nth-child(2){
-    opacity: 0;
-}
-
-ul .active span:nth-child(3){
-    bottom:auto;
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-} */
-
 img {
     max-width: 100%;
     height: auto;
