@@ -256,7 +256,7 @@ h1 {
 }
 
 /* Make hero section a flex container */
-#hero, .hero-content {
+/*#hero, .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center; /* vertical centering */
@@ -264,7 +264,27 @@ h1 {
     min-height: 80vh; /* take at least 80% of viewport height */
     padding-left: 15%; /* keep your original spacing */
     padding-right: 15%;
+/* } */ 
+
+#hero, .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* instead of center */
+    align-items: flex-start;
+    min-height: 70vh; /* lower min-height if needed */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 100px; /* space for fixed header */
 }
+
+h1 {
+    padding-top: 0;
+    margin-top: 2rem; /* instead of 6% */
+}
+.pageHero-subHeading {
+    margin-top: 1rem;
+}
+
 
 /* Adjust heading and subheading if needed */
 .heading-one {
